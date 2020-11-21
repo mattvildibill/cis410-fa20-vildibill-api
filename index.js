@@ -227,6 +227,23 @@ app.post("/supplier/login", async (req,res)=>{
 
 
 
+    app.get("/review/me", auth, (req,res)=> {
+
+       
+    
+        var query = `SELECT * 
+        FROM [Review]
+        WHERE SupplierFK = ${req.Supplier.SupplierPK}`
+    
+        db.executeQuery(query)
+        .then((result) => {
+            res.status(200).send(result)
+        }).catch((error)=>{
+            res.status(500)
+        })
+    
+    
+    })
     
 // app.post("/review", auth, async, (req, res)=>{
 //     try{
