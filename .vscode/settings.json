@@ -1,0 +1,5 @@
+{
+    "appService.showBuildDuringDeployPrompt": false,
+    "appService.defaultWebAppToDeploy": "/subscriptions/59958f0b-44b9-4127-88b9-cbb97dcbd78b/resourceGroups/cis410-fa20vildibill/providers/Microsoft.Web/sites/cis410-fa20vildibill",
+    "appService.deploySubpath": "."
+}

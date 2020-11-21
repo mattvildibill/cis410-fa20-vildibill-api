@@ -1,12 +1,12 @@
 const sql = require('mssql')
-const rockwellConfig = require('./config.js')
+const mattvConfig = require('./config.js')
 
 
 const config = {
-    user: rockwellConfig.DB.user,
-    password: rockwellConfig.DB.password,
-    server: rockwellConfig.DB.server,
-    database: rockwellConfig.DB.database,
+    user: mattvConfig.DB.user,
+    password: mattvConfig.DB.password,
+    server: mattvConfig.DB.server,
+    database: mattvConfig.DB.database,
 }
 
 
